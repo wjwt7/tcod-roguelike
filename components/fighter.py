@@ -1,10 +1,10 @@
 from components.base_component import BaseComponent
 
 class Fighter(BaseComponent):
-    def __init__(self, hp: int, base_defense: int, power: int):
+    def __init__(self, hp: int, defense: int, power: int):
         self.max_hp = hp
         self.hp = hp
-        self.defense = base_defense
+        self.defense = defense
         self.power = power 
 
     @property
