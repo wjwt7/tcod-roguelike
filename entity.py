@@ -81,7 +81,7 @@ class Actor(Entity):
             blocks_movement=True,
         )
 
-        self.ai = Optional[BaseAI] = ai_cls(self)
+        self.ai: Optional[BaseAI] = ai_cls(self)
 
         self.fighter = fighter
         self.fighter.entity = self
