@@ -13,7 +13,7 @@ class Engine:
     game_map: GameMap
 
     def __init__(self, player: Entity):
-        self.event_handler = EventHandler = EventHandler(self)
+        self.event_handler: EventHandler = EventHandler(self)
         self.player = player
 
     def handle_enemy_turns(self) -> None:
